@@ -35,34 +35,28 @@ export function initial () {
 
     let about = document.createElement("button");
     about.innerText = "About";
+    about.setAttribute("id", "about");
     menuDiv.appendChild(about);
 
     let menu = document.createElement("button");
     menu.innerText = "Menu";
+    menu.setAttribute("id", "menu");
     menuDiv.appendChild(menu);
 
     let contact = document.createElement("button");
     contact.innerText = "Contact";
+    contact.setAttribute("id", "contact");
     menuDiv.appendChild(contact);
 
     // Dynamic content
 
     let dynamicContentContainer = document.createElement("div");
-    dynamicContentContainer.setAttribute("style", "background-color:grey; display: flex;justify-content:center;align-items: center;");
+    dynamicContentContainer.setAttribute("style", "display: flex;justify-content:center;align-items: center;");
     content.appendChild(dynamicContentContainer);
 
     let dynamicContent = document.createElement("div");
-    dynamicContent.setAttribute("style", "width:80%; background-color:lightblue;");
+    dynamicContent.setAttribute("style", "width:80%;");
+    dynamicContent.setAttribute("id", "dynamic");
     dynamicContentContainer.appendChild(dynamicContent);
-
-    let test = document.createElement("div");
-    test.innerText = "testing this bitches";
-    dynamicContent.appendChild(test);
-
-   
-
-
-
-
     
 }
